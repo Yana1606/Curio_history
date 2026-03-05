@@ -73,7 +73,7 @@ class _ChildInfoScreenState extends State<ChildInfoScreen> {
                 child: Opacity(
                   opacity: 1,
                   child: Image.asset(
-                    'assets/images/Logo1.png',
+                    'assets/images/Star.svg',
                     width: 300 * scale,
                     height: 300 * scale,
                   ),
