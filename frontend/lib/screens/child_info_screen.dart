@@ -71,7 +71,7 @@ class _ChildInfoScreenState extends State<ChildInfoScreen> {
               child: Transform.rotate(
                 angle: rotation,
                 child: Opacity(
-                  opacity: 1,
+                  opacity: 0.75,
                   child: Image.asset(
                     'assets/images/Star.svg',
                     width: 300 * scale,
