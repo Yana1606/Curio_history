@@ -12,6 +12,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_svg: ^2.0.10
 
 flutter:
   uses-material-design: true
@@ -20,3 +21,6 @@ flutter:
     - assets/images/logo.png
     - assets/images/forest.png
     - assets/images/google_icon.png
+    - assets/images/boy.svg
+    - assets/images/girl.svg
+    - assets/images/Logo1.png

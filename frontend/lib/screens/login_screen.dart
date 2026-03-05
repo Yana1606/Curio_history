@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'child_info_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -15,9 +16,7 @@ class LoginScreen extends StatelessWidget {
           Positioned.fill(
             child: FittedBox(
               fit: BoxFit.contain,
-              child: Image.asset(
-                "assets/images/forest.png",
-              ),
+              child: Image.asset("assets/images/forest.png"),
             ),
           ),
 
@@ -26,7 +25,6 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               children: [
 
-                /// Отступ сверху
                 SizedBox(height: screenHeight * 0.12),
 
                 /// Заголовок
@@ -51,14 +49,23 @@ class LoginScreen extends StatelessWidget {
 
                 const Spacer(),
 
-                /// Google кнопка
+                /// Кнопка Google
                 Center(
                   child: SizedBox(
                     width: 380,
                     height: 56,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
 
+                        /// Переход на экран данных ребенка
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const ChildInfoScreen(),
+                          ),
+                        );
+
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
                         elevation: 4,
@@ -68,7 +75,6 @@ class LoginScreen extends StatelessWidget {
                         padding: EdgeInsets.zero,
                       ),
 
-                      /// центрируем группу
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         mainAxisSize: MainAxisSize.min,
@@ -100,7 +106,6 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
 
-                /// Отступ снизу
                 SizedBox(height: screenHeight * 0.12),
               ],
             ),
